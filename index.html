@@ -18,18 +18,17 @@
       width: calc(100vw - 20px);
       border: 10px solid red;
       display: flex;
-      /*esto hace que sea responsive y entre todo en el contenedor*/
-      flex-wrap: wrap; 
-      justify-content: center;
-      /*align-items: center; esto centraria pero con mucho espacio entre ellas*/
-      align-content: center; /*centra el contenido pero agrupado*/
-      
+
     }
 
     img {
         margin: 10px;
-        height: 90px;
-        width: 150px;
+        height: 60px;
+        width: 100px;
+    }
+    .img2 {
+        align-self: flex-end;
+        /*la posibilidad de introducir un item flex independiente del resto*/
     }
 
 
@@ -37,12 +36,9 @@
 </head>
 <body>
   <div class="container">
-    <img src="IMAGE1.jpg" alt="">
-    <img src="IMAGE2.jpg" alt="">
-    <img src="IMAGE3.jpg" alt="">
-    <img src="IMAGE4.jpg" alt="">
-    <img src="IMAGEN5.jpg" alt="">
-    <img src="IMAGEN6.jpg" alt="">
+    <img src="IMAGE1.jpg" class="img1" alt="">
+    <img src="IMAGE2.jpg" class="img2" alt="">
+    <img src="IMAGE3.jpg" class="img3" alt="">
     </div>
   </div>
 </body>
